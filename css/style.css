@@ -4,6 +4,7 @@ body
 {
     font-family: 'Raleway', sans-serif;
 
+
 }
 
 .star1
@@ -18,6 +19,11 @@ body
     background-color:white;
     color:#a3a3a3;
     font-size:10px;
+}
+
+button
+{
+    cursor:pointer;
 }
 
 /*Header + Nav*/
@@ -519,48 +525,79 @@ ul li a
     text-decoration: none;
     color: black;
 }
+/* VERSION TABLETTE */
+
+@media screen and (max-width:768px) {
+
+#conteneur
+{
+    flex-direction: column-reverse;
+}
+
+
+}
 
 /* VERSION MOBILE */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:480px) {
+
+/* DIVERS */
+body 
+{
+    margin:0px;
+}   
 
 /* LOGO et NAV */
 header
 {
     flex-direction: column;
+    position:fixed;
+    width:100%;
+    background-color: rgb(255, 0, 0);
+    margin:0px;
 }
 header img
 {
-    margin-left:30%;
+    margin-left:43%;
+    margin-top:40px;
 }
+
+nav
+{
+    width:100%;
+}
+
 nav ul
 {
     font-size:20px;
-    margin-left:-80px;
-}
-li
-{
-    margin-right:20px;
 }
 
-nav a
+.navigation
+{
+    min-width:60%;
+}
+
+.navigation a
 {
     border-bottom: 4px solid #F2F2F2;
     padding-bottom: 10px;
+    padding-left:65px;
+    padding-right:80px;
 
 }
-nav a:hover
+.navigation a:hover
 {
     border-bottom: 4px solid #0065FC;
     padding-bottom: 10px;
+    border-top:none;
+    padding-left:65px;
+    padding-right:80px;
 
 }
+
+
 
 /* EN TETE */
-header
-{
-    background-color:white;
-}
 
 #tête
 {
