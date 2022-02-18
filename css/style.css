@@ -24,6 +24,7 @@ button
     cursor:pointer;
 }
 
+
 /*Header + Nav*/
 
 header
@@ -182,6 +183,7 @@ input
     border-radius:50px;
     -webkit-box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
     box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
+    transition-duration:0.3s;
 
 }
 
@@ -215,7 +217,6 @@ span
     align-items: center;
     margin-right: 10px;
     color:#0065FC;
-
     font-size: 13px;
     padding: 5px;
     border: 1px solid #F2F2F2;
@@ -279,6 +280,12 @@ span
     padding: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+#hebergement figure:hover
+{
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56); 
+    box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
+    transition-duration:0.3s;
+}
 
 
 #hebergement a
@@ -286,7 +293,6 @@ span
     text-decoration: none;
     color:black;
     width: 30%;
-
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
@@ -365,6 +371,13 @@ aside figure
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
+aside figure:hover
+{
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56); 
+    box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
+    transition-duration:0.3s;
+}
+
 aside figcaption
 {
     width: 65%;
@@ -398,6 +411,8 @@ aside p
     width:100%;
     margin-top:20px;
     margin-bottom:30px;
+
+
 
 }
 
@@ -435,8 +450,8 @@ aside p
 
 .imgbig
 {
-    height:350px;
     width:100%;
+    height:350px;
 }
 
 #imgmed
@@ -449,14 +464,14 @@ aside p
 
 {
     width:100%;
-    height:110px;
-    margin-top:22px;
+    height:145px;
+
 }
 
 .imghalf
 {
     width:100%;
-    height:145px;
+    height:150px;
 }
 
 #activites figure
@@ -467,6 +482,13 @@ aside p
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
 }
+
+#activites figure:hover
+{
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56); 
+    box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
+    transition-duration:0.3s;
+}
 #activites a
 {
     text-decoration:none;
@@ -475,6 +497,11 @@ aside p
     width:25%;
 }
 
+.columnact 
+{
+    width:25%;
+
+}
 #activites h3
 {
     margin-left:10px;
@@ -531,9 +558,31 @@ ul li a
     flex-direction: column-reverse;
 }
 
+aside
+{
+    width:100%;
+    margin:0px;
+    border-radius: initial;
+    margin-left:-5px;
+    padding-right:10px;
 }
 
+aside figure
+{
+    height:180px;
+}
 
+#hebmarseille
+{
+    width:100%;
+    margin:0px;
+    background-color:white;
+}
+#more
+{
+    background-color:white;
+}
+}
 
 /* VERSION MOBILE */
 
@@ -753,6 +802,7 @@ aside h2 i
 #actmars
 {
     margin-top:80px;
+    width:100%;
 }
 #activ
 {
@@ -762,20 +812,28 @@ aside h2 i
 #activites
 {
     flex-direction: column;
+    width:100%;
 }
 
-#activites figure
+#activites a
 {
     width:90%;
-    height:300px;
-    margin-left:2%;
+    margin-left:6%;
+
+}
+.columnact
+{
+    width:90%;
+    margin-left:6%;
+
 }
 
 #activites img
 {
-    width:100%;
     height:250px;
 }
+
+
 
 
 
