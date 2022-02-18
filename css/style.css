@@ -120,6 +120,11 @@ label i
     box-shadow: 0px 0px 16px 3px rgba(0,101,252,0.56);
 }
 
+#loupe
+{
+    display:none;
+}
+
 input
 {
     background-color: white;
@@ -281,7 +286,7 @@ span
     text-decoration: none;
     color:black;
     width: 30%;
-    max-width: 350px;
+
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
@@ -415,12 +420,12 @@ aside p
 
 }
 
-.columnact
+#activites img
 {
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
+    object-fit: cover;
 }
+
+
 
 #activites img 
 {
@@ -431,26 +436,26 @@ aside p
 .imgbig
 {
     height:350px;
-    width:200px;
+    width:100%;
 }
 
 #imgmed
 {
-    width:200px;
+    width:100%;
     height:160px;
 }
 
 #imgtiny
 
 {
-    width:200px;
+    width:100%;
     height:110px;
     margin-top:22px;
 }
 
 .imghalf
 {
-    width:200px;
+    width:100%;
     height:145px;
 }
 
@@ -467,6 +472,7 @@ aside p
     text-decoration:none;
     color:black;
     font-size:10px;
+    width:25%;
 }
 
 #activites h3
@@ -518,20 +524,20 @@ ul li a
     color: black;
 }
 /* VERSION TABLETTE */
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
 
 #conteneur
 {
     flex-direction: column-reverse;
 }
 
-
 }
+
+
 
 /* VERSION MOBILE */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
 
 /* DIVERS */
 body 
@@ -568,15 +574,15 @@ nav ul
 
 .navigation
 {
-    min-width:60%;
+    min-width:55%;
 }
 
 .navigation a
 {
     border-bottom: 4px solid #F2F2F2;
     padding-bottom: 16px;
-    padding-left:20%;
-    padding-right:35%;
+    padding-left:35%;
+    padding-right:40%;
 
 }
 .navigation a:hover
@@ -584,8 +590,8 @@ nav ul
     border-bottom: 4px solid #0065FC;
     padding-bottom: 16px;
     border-top:none;
-    padding-left:20%;
-    padding-right:35%;
+    padding-left:35%;
+    padding-right:40%;
 
 }
 
@@ -605,6 +611,42 @@ nav ul
 #tete p
 {
     font-size:20px;
+}
+/*RECHERCHE*/
+
+
+#recherche
+{
+    width:100%;
+}
+input
+{
+    width:60%;
+    height:30px;
+}
+label i
+{
+    padding:19px;
+}
+#search
+{
+    display:none;
+}
+#loupe
+{
+    display:initial;
+    background-color:#0065FC;
+    border:none;
+    padding-top:6px;
+    padding-left:8px;
+    margin-left:-5px;
+    border-top-right-radius:16px;
+    border-bottom-right-radius:16px;
+}
+#loupe i 
+{
+    background-color:#0065FC;
+    color: white;
 }
 
 /* FILTRES */
@@ -677,12 +719,21 @@ aside h2 i
     width:100%;
     margin:0px;
 }
-#hebergement
+#hebergement a
 {
     flex-direction: column;
-    width:100%;
+    width:85%;
+    margin-left:-2px;
 }
+#hebergement figure
+{
+    height:250px;
 
+}
+#hebergement img
+{
+    max-height:180px;
+}
 #marseille
 {
     font-size:25px;
@@ -719,6 +770,7 @@ aside h2 i
     height:300px;
     margin-left:2%;
 }
+
 #activites img
 {
     width:100%;
