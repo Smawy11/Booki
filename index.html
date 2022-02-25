@@ -14,7 +14,7 @@
 
         <body>
             <header>                                                            
-                <img src="img/Booki.png" alt="logo"/>
+                <a href="#"><img src="img/Booki.png" alt="logo"/></a>
                 <nav>                                                      
                     <ul>
                         <li class="navigation"><a href="#marseille">Hébergements</a></li>
@@ -32,8 +32,7 @@
                         <label>
                             <i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Marseille, France"/> 
                         </label>
-                            <button id="search">Rechercher</button>
-                            <button id="loupe"><i class="fas fa-search"></i></button>
+                            <button><span id="search">Rechercher</span><span id="loupe"><i class="fas fa-search"></i></span></button>
                     </form>
                 </div>
 
@@ -46,12 +45,12 @@
                         <button class="filtre"><i class="fas fa-dog"></i><span>Animaux autorisés</span></button>
                     </form>
                 </div>
-                    <p id="infop"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p id="infop"><i class="fas fa-info"></i> <span id="txtinfo">Plus de 500 logements sont disponibles dans cette ville</span></p>
             </section>
 
             <section id="conteneur">
                 <section id="hebmarseille">
-                    <h2 id="marseille">Hébergements à Marseille</h2>
+                    <h2>Hébergements à Marseille</h2>
                         <div id="hebergement">
                             <a href="#">
                                 <figure>
