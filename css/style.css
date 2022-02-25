@@ -155,7 +155,6 @@ button {
 /*Header + Nav*/
 
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
@@ -439,6 +438,10 @@ aside h2 {
   margin-top: 20px;
   margin-left: 38px;
 }
+#titrepop i {
+  margin-top: 20px;
+  font-size: 20px;
+}
 
 #titrepop {
   display: flex;
@@ -586,10 +589,7 @@ footer {
   padding-top: 20px;
   margin-top: 60px;
   width: 100%;
-  padding-right: 18px;
-  margin-bottom: -10px;
-  margin-left: -10px;
-  margin-right: 0px;
+  padding-bottom: 30px;
 }
 
 #footgen {
@@ -608,7 +608,6 @@ footer {
 ul {
   list-style: none;
   font-size: 13px;
-  padding-bottom: 20px;
 }
 
 #footgen a {
@@ -649,7 +648,7 @@ ul {
   }
 
   #activites {
-    width: 97%;
+    width: 90%;
     margin-left: 35px;
   }
 }
@@ -667,9 +666,10 @@ ul {
     flex-direction: column;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0px;
     margin-top: -20px;
+    padding-bottom: 20px;
   }
   header img {
     margin-left: 43%;
@@ -843,11 +843,9 @@ ul {
 
   #activites a {
     width: 95%;
-    margin-left: 1%;
   }
   .columnact {
     width: 95%;
-    margin-left: 1%;
   }
 
   #activites img {
